@@ -1,0 +1,81 @@
+.stepper-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.stepper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 200px;
+}
+
+.stepper__number {
+    width: 40px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: lightgray;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.stepper__number--active {
+    background-color: blue;
+    color: white;
+}
+
+.stepper__number--completed {
+    background-color: green;
+    color: white;
+}
+
+.stepper__progress {
+    height: 4px;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    z-index: 1;
+    background-color: lightgray;
+}
+
+.stepper__progress--bar {
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    transition: all 0.5s;
+}
+
+.stepper__component {
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    width: 100%;
+    min-height: 20vh;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+.stepper__next-btn {
+    border: 1px solid blue;
+    border-radius: 8px;
+    color: blue;
+    background: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.stepper__next-btn:hover {
+    background-color: blue;
+    color: white;
+}
