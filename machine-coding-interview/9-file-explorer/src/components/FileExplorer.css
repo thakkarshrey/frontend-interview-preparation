@@ -1,0 +1,16 @@
+.file-explorer__parent{
+    background-color: lightgray;
+    width: 300px;
+    padding: 0.3rem;
+    border-radius: 4px;
+    margin: 5px;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.file-explorer__parent[data-file="true"]{
+    background-color: transparent;
+}
