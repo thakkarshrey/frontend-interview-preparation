@@ -1,0 +1,120 @@
+.notification-container{
+    display: flex;
+    align-items: center;
+}
+
+.notification-container.top{
+    flex-direction: column;
+}
+
+.notification-container.bottom{
+    flex-direction: column-reverse;
+}
+
+.notification-container .notification{
+    padding: 1rem 2rem;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    color: white;
+    width: 300px;
+    justify-content: space-between;
+}
+
+.notification-container{
+    position: fixed
+}
+
+.notification-container--top-left{
+    top: 20px;
+    left: 20px;
+}
+
+.notification-container--top-right{
+    top: 20px;
+    right: 20px;
+}
+
+.notification-container--bottom-right{
+    bottom: 20px;
+    right: 20px;
+}
+
+.notification-container--bottom-left{
+    bottom: 20px;
+    left: 20px;
+}
+
+.notification__success{
+    background-color: #4caf50;
+}
+
+.notification__error {
+    background-color: #f44336;
+}
+
+.notification__info {
+    background-color: #2196f3;
+}
+
+.notification__warning{
+    background-color: #ff9800;
+}
+
+.notification__slideIn{
+    animation: slideIn 0.5s ease-in-out;
+}
+
+.notification__fadeIn{
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.notification__popUp{
+    animation: popUp 0.5s;
+}
+
+@keyframes slideIn {
+    from{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes popUp {
+    from{
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.notification__icon-type{
+    margin-inline: 5px;
+}
+
+.notification__close-btn{
+    background:transparent;
+    cursor: pointer;
+    border: none;
+    margin-inline: 5px;
+}

@@ -1,0 +1,22 @@
+.App{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.grid-container{
+  gap: 1rem;
+  max-width: 300px;
+}
+
+.grid-container__button{
+  border: none;
+  width: 100px;
+  aspect-ratio: 1;
+  cursor: pointer;
+}
+
+.grid-container__button-filled{
+  background-color: #4caf50;
+}

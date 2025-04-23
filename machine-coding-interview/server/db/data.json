@@ -1,0 +1,48 @@
+{
+  "polls": [
+    {
+      "id": "10",
+      "question": "Legendary foolball player in the world?",
+      "totalVotes": 40,
+      "options": [
+        {
+          "id": "12",
+          "title": "Messi",
+          "votes": 23
+        },
+        {
+          "id": "13",
+          "title": "Ronaldo",
+          "votes": 11
+        },
+        {
+          "id": "14",
+          "title": "Maradona",
+          "votes": 6
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "question": "Legendary cricketer in the world?",
+      "totalVotes": 30,
+      "options": [
+        {
+          "id": "22",
+          "title": "MS Dhoni",
+          "votes": 22
+        },
+        {
+          "id": "23",
+          "title": "Virat Kohli",
+          "votes": 5
+        },
+        {
+          "id": "24",
+          "title": "Sachin Tendulkar",
+          "votes": 3
+        }
+      ]
+    }
+  ]
+}
