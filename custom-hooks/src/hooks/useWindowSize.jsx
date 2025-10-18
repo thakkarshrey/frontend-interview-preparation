@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react"
+import { useCallback, useEffect, useState } from "react"
+import useThrottle from "./useThrottle"
 
 
 export const useWindowSize = () => {
@@ -14,10 +15,12 @@ export const useWindowSize = () => {
         })
     }
 
-    useEffect(() => {
-        window.addEventListener('resize', handleResize)
+    const throttledFn = useThrottle(handleResize, 1000)
 
-        return () => window.removeEventListener('resize', handleResize)
+    useEffect(() => {
+        window.addEventListener('resize', throttledFn)
+
+        return () => window.removeEventListener('resize', throttledFn)
  
     },[])
 
